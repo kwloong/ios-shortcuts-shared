@@ -21,7 +21,7 @@ As of iOS 15.5, I can't find a direct filter for Reminder related Shortcuts acti
 
 The details shortcut as follows, you can also find the ".shortcut" [file](Show_Overdue_And_Not_Completed_Reminders_From_All/Show_Overdue_And_Not_Completed_Reminders_From_All.shortcut) in this repo.
 
-![Show_Overdue_And_Not_Completed_Reminders_From_All Shortcut screenshot](Show_Overdue_And_Not_Completed_Reminders_From_All/Show_Overdue_And_Not_Completed_Reminders_From_All_shortcut_screen.jpg)
+![Show_Overdue_And_Not_Completed_Reminders_From_All Shortcut screenshot](Show_Overdue_And_Not_Completed_Reminders_From_All/Show_Overdue_And_Not_Completed_Reminders_From_All_shortcut_screen.JPG)
 
 It runs without needing to accept any input.
 
