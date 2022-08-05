@@ -2,7 +2,7 @@
 
 (To be) Collection of iOS Shortcuts, scripts, tips, tricks and other interesting tidbits for productivity and fun on the iOS.
 
-For iOS users who want to get more out of our expensive devices. Most of the items here are targeted at (generally speaking) intermediate to advanced users of iOS devices, do pardon any insufficient elaboration.
+For iOS users who want to get more out of our expensive devices. Please pardon any insufficient elaboration.
 
 Your suggestions and contributions are most welcome! :smile:
 
@@ -17,9 +17,18 @@ Your suggestions and contributions are most welcome! :smile:
 
 This simple shortcut searches through all your reminders and selects those that are _Overdue_ and _not marked as Completed_ . They are assigned to a variable then passed to Quick Look, but you can easily modify and use this list for other purposes.
 
-As of iOS 15.5, I can't find a direct filter for Reminder related Shortcuts action that allows filtering by current date, so had to iterate through the reminders instead. 
+~~As of iOS 15.5, I can't find a direct filter for Reminder related Shortcuts action that allows filtering by current date, so had to iterate through the reminders instead.~~
 
-The details shortcut as follows, you can also find the ".shortcut" [file](Show_Overdue_And_Not_Completed_Reminders_From_All/Show_Overdue_And_Not_Completed_Reminders_From_All.shortcut) in this repo.
+Two ways:
+
+1. A simple 3 action approach as follows:
+
+![Show_Overdue_And_Not_Completed_Reminders_From_All Simple Shortcut screenshot](Show_Overdue_And_Not_Completed_Reminders_From_All/Show_Overdue_And_Not_Completed_Reminders_From_All_shortcut_screen_simple.JPG)
+
+
+2. A complicated way that iterates through "not completed" reminders to extract those that are also overdue. For adding further differentiated actions in the loop if needed.
+
+The shortcut as follows, you can also find the ".shortcut" [file](Show_Overdue_And_Not_Completed_Reminders_From_All/Show_Overdue_And_Not_Completed_Reminders_From_All.shortcut) in this repo.
 
 ![Show_Overdue_And_Not_Completed_Reminders_From_All Shortcut screenshot](Show_Overdue_And_Not_Completed_Reminders_From_All/Show_Overdue_And_Not_Completed_Reminders_From_All_shortcut_screen.JPG)
 
