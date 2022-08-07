@@ -14,7 +14,7 @@ Your suggestions and contributions are most welcome! :smile:
 
 
 ### Show Overdue And Not Completed Reminders From All
----
+
 
 This simple shortcut searches through all your reminders and selects those that are _Overdue_ and _not marked as Completed_ . They are assigned to a variable then passed to Quick Look, but you can easily modify and use this list for other purposes.
 
@@ -36,8 +36,11 @@ The shortcut as follows, you can also find the ".shortcut" [file](Show_Overdue_A
 It runs without needing to accept any input.
 
 
-### Use Reminder Notes to Persist Data
 ---
+
+
+### Use Reminder Notes to Persist Data
+
 
 How does one store small snippets of data that can be subsequently retrieved by future runs of the Shortcut, or by other Shortcuts?
 
