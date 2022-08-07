@@ -35,6 +35,45 @@ The shortcut as follows, you can also find the ".shortcut" [file](Show_Overdue_A
 It runs without needing to accept any input.
 
 
+### Use Reminder Notes to Persist Data
+
+How does one store small snippets of data that can be subsequently retrieved by future runs of the Shortcut, or by other Shortcuts?
+
+For example, if Shortcut A has already run once today, it shouldn't run again. Or Shortcut B needs to know if Shortcut A has ran today before it execute some actions.
+
+One simple, but rather brittle way is to persist this data in a Note of a Reminder. This is possible because:
+- Available Reminder actions allow for editing of reminders, and Notes of reminders can store a decent amount of text (for this purpose). As of iOS 15 this is still possible. The situation for the Notes app is different, available shortcut Actions does not allow editing of note data, only append.
+- A typical way to access and manipulate such data is using a Dictionary, which is supported in Shortcuts.
+- Dictionary shortcut Actions can serialise and deserialise a dictionary object to and from JSON (text).
+
+A simple example as follows to read and write data as follows: 
+
+![Use_Reminder_Notes_To_Persist_Data_Read](Use_Reminder_Notes_To_Persist_Data/Use_Reminder_Notes_To_Persist_Data_Read.JPG)
+
+
+Set any "key" and "value" as needed (and repeat this action with different key and value pairs as needed) 
+
+![Use_Reminder_Notes_To_Persist_Data_Write](Use_Reminder_Notes_To_Persist_Data/Use_Reminder_Notes_To_Persist_Data_Write.jpg)
+
+
+Creating getter and setter shortcuts for scalable reuse, passing appropriate inputs to these getters and setters. Depending on how deep the daisy chaining of calling other shortcuts, this can potentially make the whole thing too brittle (don't lose data even if things break! :grin: )  
+
+Gentle reminder too on:
+- Using a unique reminder name that works across *all* your reminders (including shared ones)
+- Can be easier to create a separate reminder list reserved for automation and script access, etc.
+- If you can avoid using persistent variables, it is best to be so! There's no telling if the ability to edit Notes of Reminders in Shortcuts will be taken away, etc.
+- Editing the JSON text directly in the Reminders app is quite easy, in some cases it may be easier to do so to change state than to create elaborate shortcuts :smile:
+- If employed to persist variables across devices and users through shared reminders, the time for the remote to be updated can be quite variable... sending messages (be careful about SMS charges if any) can be a more consistent method. 
+
+
+Although less common, it's still relatively easy to find good examples of other similar approaches  
+A random example is [How to make persistent variables for iOS and iPadOS Shortcuts](https://nadnosliw.wordpress.com/2021/10/28/persistent-variables-for-ios-and-ipados-shortcuts/)
+
+[Searching the web](https://duckduckgo.com/?t=ffab&q=persistent+variables+for+ios+shortcuts&ia=web) for more... 
+
+Your mileage may vary on how long before you find a Shortcut too unwieldy to manage...
+
+
 ## FAQs
 
 **Q: Why are there so few items? Where are the rest coming?**
@@ -43,7 +82,7 @@ It runs without needing to accept any input.
 
 **Q: These are simple things Why is this Readme so lengthy? Why do you need to put this online even?**
 
-**A:** The main intention is to share this with a small group of friends and family who may be interested, and to document this in case there's a future old, forgetful me.  
+**A:** The main intention is to share this with a small group of friends and family who may be interested, and to document this for future me. 
 
 **Q: Why is there even an FAQ for this??**
 
